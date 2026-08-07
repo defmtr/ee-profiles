@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+		<title>個人資料</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- self-contained roster skin; deployed pages don't depend on the shared main.css -->
+		<link rel="stylesheet" href="assets/roster.css">
+	<style class="automa-element-selector">@font-face { font-family: "Inter var"; font-weight: 100 900; font-display: swap; font-style: normal; font-named-instance: "Regular"; src: url("chrome-extension://infppggnoaenmfagbfknfkancpbljcca/Inter-roman-latin.var.woff2") format("woff2") }
+.automa-element-selector { direction: ltr } 
+ [automa-isDragging] { user-select: none } 
+ [automa-el-list] {outline: 2px dashed #6366f1;}</style></head>
+	<body>
+		<input type="hidden" name="csrfmiddlewaretoken" value="sJgdEtcRjtFIaoKZGE0epGhon9f7K1Vc5aU7udmAgiNPfK0ileJYl6WbLpbeBCbL">
+		<!-- preview-only marker; preview.js reads it then downloadHTML() strips it before saving -->
+		
+
+		<div class="profile" data-lang="cn" data-glow="on" id="profile">
+
+			<header class="hero">
+				<canvas class="net" id="heroNet" width="1903" height="348" style="width: 1923.23px; height: 351.989px;"></canvas>
+				<div class="topbar">
+					<a class="dept" href="https://www.ee.ntust.edu.tw/"><span class="mark">EE</span><span class="cn-only">國立臺灣科技大學 · 電機工程系</span><span class="en-only">NTUST · Dept. of Electrical Engineering</span></a>
+					<a class="lang-mini" id="langMini" href="#">EN</a>
+				</div>
+				<div class="idwrap">
+					<span class="avatar" id="avatarBox">陳</span>
+					<div class="identity">
+						<h1><span class="cn cn-only" id="C_name">陳學勤</span><span class="en en-only" id="E_name">Hsueh-Chin Chen</span><span class="post" id="occu"><span class="cn-only">職員</span><span class="en-only">職員</span></span></h1>
+						<div class="meta-row">
+							<span class="badge" id="groupBadge">系辦組員</span>
+							<a class="home" id="homePage" href="" style="display: none;"><span class="cn-only">個人網頁</span><span class="en-only">Homepage</span></a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- preview.js injects the office / overview / publications / projects sections here -->
+			<div class="body" id="pbody"><section class="sec"><div class="facts"><div class="fact"><p class="k"><span class="cn-only">辦公室</span><span class="en-only">Office</span></p><p class="v">系辦公室</p></div><div class="fact"><p class="k"><span class="cn-only">分機</span><span class="en-only">Ext.</span></p><p class="v">02-2737-6713</p></div><div class="fact"><p class="k"><span class="cn-only">電子郵件</span><span class="en-only">Email</span></p><p class="v"><a class="email-link" href="#" data-u="g11324" data-d="mail.ntust.edu.tw">g11324<span class="at-sign"></span>mail.ntust.edu.tw</a></p></div></div><div class="facts"><div class="fact"><p class="k"><span class="cn-only">實驗室</span><span class="en-only">Laboratory</span></p><p class="v">ee202</p></div></div></section><section class="sec"><div class="sec-head"><div class="t"><h2><span class="cn-only">學術背景與專業概覽</span><span class="en-only">Academic &amp; Professional Overview</span></h2></div></div><div class="ov"><div class="ov-row"><div class="lab"><span class="cn-only">學、經歷</span><span class="en-only">Education &amp; Experience</span></div><div><ul class="cn-only"><li>台科大</li></ul><ul class="en-only"><li>NTUST</li></ul></div></div><div class="ov-row"><div class="lab"><span class="cn-only">課程</span><span class="en-only">Course</span></div><div><ul class="cn-only"></ul><ul class="en-only"></ul></div></div><div class="ov-row"><div class="lab"><span class="cn-only">研究領域</span><span class="en-only">Research Areas</span></div><div><ul class="cn-only"></ul><ul class="en-only"></ul></div></div></div></section><section class="sec"><div class="sec-head"><div class="t"><h2><span class="cn-only">代表著作</span><span class="en-only">Publications</span></h2></div></div><div class="tabs"><button type="button" data-target="w_Journals" aria-pressed="true"><span class="cn-only">期刊論文</span><span class="en-only">Journals</span></button><button type="button" data-target="w_Proceedings" aria-pressed="false"><span class="cn-only">研討會論文</span><span class="en-only">Proceedings</span></button><button type="button" data-target="w_ScholarlyWorks" aria-pressed="false"><span class="cn-only">專利、專書、技術報告</span><span class="en-only">Scholarly Works</span></button></div><div><div class="work active" id="w_Journals"><div class="item"><div class="thumb">01</div><div class="body-txt"><p class="cite">test</p></div></div></div><div class="work" id="w_Proceedings"><p class="cite empty"><span class="cn-only">尚無資料</span><span class="en-only">No records</span></p></div><div class="work" id="w_ScholarlyWorks"><p class="cite empty"><span class="cn-only">尚無資料</span><span class="en-only">No records</span></p></div></div></section><section class="sec"><div class="sec-head"><div class="t"><h2><span class="cn-only">研究計畫</span><span class="en-only">Research Projects</span></h2></div></div><div class="tabs"><button type="button" data-target="w_NSC" aria-pressed="true"><span class="cn-only">國科會計畫</span><span class="en-only">NSC</span></button><button type="button" data-target="w_Industry" aria-pressed="false"><span class="cn-only">建教合作計畫</span><span class="en-only">Industry</span></button></div><div><div class="work active" id="w_NSC"><div class="proj"><span class="yr">年度</span><span>計畫名稱</span><span class="role">委託單位</span></div><div class="proj"><span class="yr">2024-2025</span><span>可信任人工智慧系統的關鍵技術研究－子計畫三：可信任人工智慧系統強韌性與公平性技術研發與整合應用</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2023-2026</span><span>邁向6G:基於低軌道(LEO)衛星通訊網路之智慧化應用與部署－先進LEO通訊網路之資訊安全技術與應用</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2022-2024</span><span>人工智慧戰略溯源之勒索軟體分析技術與零信任策略防禦研究－人工智慧應用於勒索軟體之端點異常行為偵測與防禦</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2022-2024</span><span>2022-2024	資訊學門研究發展及推動規劃計畫</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2021-2025</span><span>B5G/6G 通訊軟體技術</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2021-2023</span><span>高效能觸覺互聯網應用之智慧5G/B5G架構設計及資源管理</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2019-2022</span><span>下世代網路虛擬化關鍵技術研發暨水資源管理應用</span><span class="role">國科會</span></div><div class="proj"><span class="yr">2019-2021</span><span>人工智慧於社交網路使用者行為與內容之假消息檢測</span><span class="role">國科會</span></div></div><div class="work" id="w_Industry"><div class="proj"><span class="yr">年度</span><span>計畫名稱</span><span class="role">委託單位</span></div><div class="proj"><span class="yr">2024</span><span>資安測試工具計畫</span><span class="role">耀睿科技股份有限公司</span></div><div class="proj"><span class="yr">2023</span><span>運動科技資料處裡粉絲賽事體驗服研究</span><span class="role">光禾感知科技股份有限公司</span></div><div class="proj"><span class="yr">2022</span><span>運動科技資料處理服務研究</span><span class="role">光禾感知科技股份有限公司</span></div><div class="proj"><span class="yr">2022</span><span>委託客製化次系統異常封包偵測資安模組</span><span class="role">財團法人工業技術研究院</span></div><div class="proj"><span class="yr">2020</span><span>多社群傳播路徑與其影像分析系統開發及深偽影片辨識研究</span><span class="role">財團法人資訊工業策進會</span></div><div class="proj"><span class="yr">2020</span><span>網路社群互動結構與AI Neural Network演算法研究</span><span class="role">財團法人資訊工業策進會</span></div><div class="proj"><span class="yr">2020</span><span>無人機安全架構與通訊機制研究</span><span class="role">中光電智能機器人股份有限公司</span></div></div></div></section></div>
+
+			<footer class="foot">© 2026 國立臺灣科技大學 電機工程系　Department of Electrical Engineering, NTUST. All Rights Reserved.</footer>
+		</div>
+
+		
+		
+		<script src="assets/roster_hero.js"></script>
+		
+	
+
+<div id="automa-palette"></div><script src="assets/preview_rpage.js"></script></body></html>
