@@ -20,6 +20,14 @@
     if (langBtn) langBtn.addEventListener('click', toggleLang);
     if (langMini) langMini.addEventListener('click', function (e) { e.preventDefault(); toggleLang(); });
 
+    // anti-scrape email: assemble mailto only when clicked
+    document.querySelectorAll('.email-link').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        location.href = 'mailto:' + a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+      });
+    });
+
     // publication / project tabs
     document.querySelectorAll('.tabs').forEach(function (tabs) {
       tabs.addEventListener('click', function (e) {

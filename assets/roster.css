@@ -173,3 +173,7 @@ img { max-width:100%; }
   .profile.reveal .sec { opacity:1; transform:none; transition:none; }
   .work.active { animation:none; }
 }
+
+.at-sign::before {
+    content: "@";
+}
