@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+		<title>個人資料</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- self-contained roster skin; deployed pages don't depend on the shared main.css -->
+		<link rel="stylesheet" href="assets/roster.css">
+	</head>
+	<body>
+		<input type="hidden" name="csrfmiddlewaretoken" value="08De0JXFN1o0v0VEIe0ir78wHdKAsIHMgzmaS0Cacq38UM2A5wov7Tb4WwRcb3R3">
+		<!-- preview-only marker; preview.js reads it then downloadHTML() strips it before saving -->
+		
+
+		<div class="profile" data-lang="cn" data-glow="on" id="profile">
+
+			<header class="hero">
+				<canvas class="net" id="heroNet" width="1264" height="351" style="width: 1264.55px; height: 351.989px;"></canvas>
+				<div class="topbar">
+					<a class="dept" href="https://www.ee.ntust.edu.tw/"><span class="mark">EE</span><span class="cn-only">國立臺灣科技大學 · 電機工程系</span><span class="en-only">NTUST · Dept. of Electrical Engineering</span></a>
+					<a class="lang-mini" id="langMini" href="#">EN</a>
+				</div>
+				<div class="idwrap">
+					<span class="avatar" id="avatarBox"><img id="avatar" alt="" src="https://ee-r.ntust.edu.tw/var/file/27/1027/img/3527/ncyang.jpg"></span>
+					<div class="identity">
+						<h1><span class="cn cn-only" id="C_name">楊念哲</span><span class="en en-only" id="E_name">Nien-Che Yang</span><span class="post" id="occu"><span class="cn-only">教授</span><span class="en-only">Professor</span></span></h1>
+						<div class="meta-row">
+							<span class="badge" id="groupBadge">電力與能源組</span>
+							<a class="home" id="homePage" href="https://sites.google.com/view/ntustee106ncyang"><span class="cn-only">個人網頁</span><span class="en-only">Homepage</span></a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- preview.js injects the office / overview / publications / projects sections here -->
+			<div class="body" id="pbody"><section class="sec"><div class="facts"><div class="fact"><p class="k"><span class="cn-only">辦公室</span><span class="en-only">Office</span></p><p class="v">EE-324</p></div><div class="fact"><p class="k"><span class="cn-only">分機</span><span class="en-only">Ext.</span></p><p class="v">02-2737-6694</p></div><div class="fact"><p class="k"><span class="cn-only">電子郵件</span><span class="en-only">Email</span></p><p class="v"><a href="mailto:ncyang@mail.ntust.edu.tw">ncyang@mail.ntust.edu.tw</a></p></div></div><div class="facts"><div class="fact"><p class="k"><span class="cn-only">實驗室</span><span class="en-only">Laboratory</span></p><p class="v">電力系統控制實驗室 Power System Analysis Lab.<br>Location : EE-106<br>Phone : 02-2733-3141 ext. 7369</p></div></div></section><section class="sec"><div class="sec-head"><div class="t"><h2><span class="cn-only">學術背景與專業概覽</span><span class="en-only">Academic &amp; Professional Overview</span></h2></div></div><div class="ov"><div class="ov-row"><div class="lab"><span class="cn-only">學、經歷</span><span class="en-only">Education &amp; Experience</span></div><div><ul class="cn-only"><li>國立台灣科技大學 電機博士</li></ul><ul class="en-only"><li>Ph.D., Department of Electrical Engineering, National Taiwan University of Science and Technology</li></ul></div></div><div class="ov-row"><div class="lab"><span class="cn-only">課程</span><span class="en-only">Course</span></div><div><ul class="cn-only"><li>配電系統模擬、電機機械、人工智慧於電力系統之應用</li></ul><ul class="en-only"><li>Simulation of Electric Distribution Systems、Electric Machinery、AI in Power System Applications</li></ul></div></div><div class="ov-row"><div class="lab"><span class="cn-only">研究領域</span><span class="en-only">Research Areas</span></div><div><ul class="cn-only"><li>電力工程、配電工程、微型電網、智慧電網、建築節能、再生能源、分散型電源、電力品質、智慧電動車、人工智慧、機器學習</li></ul><ul class="en-only"><li>Power System Engineering、Power Distribution Engineering、Microgrid、Smart Grid、Building Energy Conservation、Renewable Energy、Distributed Generation、Power Quality、Artificial Intelligence、Machine Learning</li></ul></div></div></div></section><section class="sec"><div class="sec-head"><div class="t"><h2><span class="cn-only">代表著作</span><span class="en-only">Publications</span></h2></div></div><div class="tabs"><button type="button" data-target="w_Journals" aria-pressed="true"><span class="cn-only">期刊論文</span><span class="en-only">Journals</span></button><button type="button" data-target="w_Proceedings" aria-pressed="false"><span class="cn-only">研討會論文</span><span class="en-only">Proceedings</span></button><button type="button" data-target="w_ScholarlyWorks" aria-pressed="false"><span class="cn-only">專利、專書、技術報告</span><span class="en-only">Scholarly Works</span></button></div><div><div class="work active" id="w_Journals"><p class="cite empty"><span class="cn-only">尚無資料</span><span class="en-only">No records</span></p></div><div class="work" id="w_Proceedings"><p class="cite empty"><span class="cn-only">尚無資料</span><span class="en-only">No records</span></p></div><div class="work" id="w_ScholarlyWorks"><p class="cite empty"><span class="cn-only">尚無資料</span><span class="en-only">No records</span></p></div></div></section><section class="sec"><div class="sec-head"><div class="t"><h2><span class="cn-only">研究計畫</span><span class="en-only">Research Projects</span></h2></div></div><div class="tabs"><button type="button" data-target="w_NSC" aria-pressed="true"><span class="cn-only">國科會計畫</span><span class="en-only">NSC</span></button><button type="button" data-target="w_Industry" aria-pressed="false"><span class="cn-only">建教合作計畫</span><span class="en-only">Industry</span></button></div><div><div class="work active" id="w_NSC"><div class="proj"><span class="yr">年度</span><span>計畫名稱</span><span class="role">委託單位</span></div></div><div class="work" id="w_Industry"><div class="proj"><span class="yr">年度</span><span>計畫名稱</span><span class="role">委託單位</span></div></div></div></section></div>
+
+			<footer class="foot">© 2026 國立臺灣科技大學 電機工程系　Department of Electrical Engineering, NTUST. All Rights Reserved.</footer>
+		</div>
+
+		
+		
+		<script src="assets/roster_hero.js"></script>
+		
+	
+
+<script src="assets/preview_rpage.js"></script></body></html>
