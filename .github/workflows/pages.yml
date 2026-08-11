@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+
+# 取代 GitHub 內建的 pages-build-deployment（legacy「從分支部署」）。內建那支
+# 用的 actions/checkout@v4 與 actions/upload-artifact@v4 仍指向已淘汰的 Node 20，
+# 每次推送都會在 build job 印棄用警告，而它不在本 repo 裡、改不到。自己接手部署
+# 就能用目前版本的 action，警告消失。
+#
+# 站台內容是純靜態 HTML + assets/，含 .nojekyll，所以直接把整個 repo 當成成品
+# 上傳，不做任何建置。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 老師個人頁由 8088 逐一發布，短時間可能連續推送。同時只跑一個部署、但不取消
+# 進行中的那個，免得把已經在上傳的成品中斷掉。
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
